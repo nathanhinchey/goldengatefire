@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>Golden Gate Fire Equipment</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/stylesheet.css" charset="utf-8">
+    <link rel="shortcut icon" href="assets/images/favicon_no_text.ico">
+  </head>
+  <body onload="javascript:window_onload();">
+    <header>
+      <h1>Golden Gate Fire Equipment</h1>
+    </header>
+    <nav id="navbar" class="navbar_absolute">
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#training">Trainings</a></li>
+        <!-- <li><a href="#estimate">Request an estimate</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="about">
+      <img src="assets/images/fire_extinguishers_3066x1569.jpg"/>
+      <h2>A trusted name in fire safety</h2>
+      <p>
+        When it comes to fire protection, you don't want to be unprepared.
+        That's why <b>Golden Gate Fire Equipment</b> has been helping keep the Bay
+        Area safe for over 20 years. We provide affordable, convenient
+        service all over the bay area. We do residential, commercial, and
+        industrial locations. With <b>Golden Gate Fire Equipment</b>, you never
+        have to come to us &mdash; all of our service is mobile.
+      </p>
+      <p>
+        Whether you're looking for training, need
+        maintenance for your existing fire extinguishers, need an inspection
+        for your fire hoses, or need new fire safety equipment, <b>Golden Gate
+        Fire Equipment</b> is here for you.
+        <!-- Click <a href="#estimate">here</a> to get an estimate! -->
+        See our contact informcation <a href="#contact">here</a>.
+      </p>
+      </section>
+      <section id="training">
+        <img src="assets/images/fire_training_cropped.jpg"/>
+        <h2>Training</h2>
+        <p>
+          Being prepared is about more than just having the right equipment.
+          If you want your workplace to be better prepared in case of an
+          emergency, we are available to lead training sessions. Typically our
+          training involves a discussion of fire code, proper ways to
+          respond in case of a fire, and an opportunity to practice
+          discharging a fire extinguisher.
+        </p>
+        <p>
+          We have taught fire extinguisher usage lessons to offices,
+          warehouses, and even at city wide safety fairs. To request a
+          training,
+          <!-- go to our <a href="#estimate">estimates</a> section and select <b>"training"</b> from the drop down menu. -->
+          <a href="#contact">contact</a> us!
+        </p>
+      </section>
+      <!-- <section id="estimate">
+        <h2>Estimates</h2>
+        <form method="post" name="contactform" action="send_form_email.php">
+          <fieldset>
+            <label for="email">Your email address:</label>
+            <input type="text" name="email">
+          </fieldset>
+          <fieldset>
+            <label for="telephone">Your phone number:</label>
+            <input type="text" name="telephone">
+          </fieldset>
+          <fieldset>
+            <label for="company">Your company name:</label>
+            <input type="text" name="company">
+          </fieldset>
+          <fieldset>
+            <label for="name">Your name:</label>
+            <input type="text" name="name">
+          </fieldset>
+          <fieldset>
+            <label for="service">Select type of service</label>
+            <select name="service">
+              <option value="new">Buy Fire Equipment</option>
+              <option value="service">Fire equipment inspection and maintenance</option>
+              <option value="training">Fire Safety Training</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="fire-extinguisher-count">How many fire extinguishers do you have:</label>
+            <input type="text" name="fire-extinguisher-count">
+          </fieldset>
+          <fieldset>
+            <label for="comments">More comments:</label>
+            <textarea name="comments"></textarea>
+          </fieldset>
+          <input type="submit" value="Submit">
+        </form>
+      </section> -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          You can reach us by email at
+          <a href="mailto:otho@goldengatefire.com">otho@goldengatefire.com</a>
+          or by calling us, at <b>510-234-7980</b>. Or, use the contact form below:</p>
+          <!-- Do not change the code! -->
+          <div class="contact-form">
+            <a id="foxyform_embed_link_677773" href="http://www.foxyform.com/">foxyform</a>
+            <script type="text/javascript">
+            (function(d, t){
+               var g = d.createElement(t),
+                   s = d.getElementsByTagName(t)[0];
+               g.src = "http://www.foxyform.com/js.php?id=677773&sec_hash=c0a35bc2fc5&width=350px";
+               s.parentNode.insertBefore(g, s);
+            }(document, "script"));
+            </script>
+          </div>
+<!-- Do not change the code! -->
+      </section>
+    </main>
+    <footer>Golden Gate Fire Equipment (C) 2015</footer>
+  </body>
+  <script charset="utf-8">
+
+  function window_onload() {
+    window.addEventListener("scroll",navbar_reset_top,false);
+  }
+
+  var navbar_top=70;
+
+  function navbar_reset_top() {
+    var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+    if(scrollTop>navbar_top&&navbar.className==="navbar_absolute") {
+      document.getElementById("navbar").className="navbar_fixed";
+    }
+    else if(scrollTop<navbar_top&&navbar.className==="navbar_fixed") {
+      document.getElementById("navbar").className="navbar_absolute";
+    }
+  }
+  </script>
+</html>
