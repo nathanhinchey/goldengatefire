@@ -17,7 +17,7 @@
       <p>
         When it comes to fire protection, you don't want to be unprepared.
         That's why <b>Golden Gate Fire Equipment</b> has been helping keep the Bay
-        Area safe for over <span id="years">years</span>. We provide affordable, convenient
+        Area safe for over <span id="years">30</span> years. We provide affordable, convenient
         service all over the bay area. We do residential, commercial, and
         industrial locations. With <b>Golden Gate Fire Equipment</b>, you never
         have to come to us &mdash; all of our service is mobile.
@@ -90,24 +90,18 @@
 <!-- Do not change the code! -->
       </section>
     </main>
-    <footer>Golden Gate Fire Equipment (C) 2020</footer>
+    <footer>Golden Gate Fire Equipment (C) <span id="copyright-year">2019</span></footer>
   </body>
   <script charset="utf-8">
 
   function window_onload() {
-    window.addEventListener("scroll",navbar_reset_top,false);
-  }
-
-  var navbar_top=70;
-
-  function navbar_reset_top() {
-    var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
-    if(scrollTop>navbar_top&&navbar.className==="navbar_absolute") {
-      document.getElementById("navbar").className="navbar_fixed";
-    }
-    else if(scrollTop<navbar_top&&navbar.className==="navbar_fixed") {
-      document.getElementById("navbar").className="navbar_absolute";
-    }
+    // set x in "for over X years"
+    years = new Date().getFullYear() - 1989;
+    roundYears = 5 * Math.floor(years / 5);
+    Document.getElementById('years').textContent = roundYears;
+    // set copyright date
+    currentYear = new Date().getFullYear();
+    Document.getElementById('copyright-year').textContent = currentYear;
   }
   </script>
 </html>
