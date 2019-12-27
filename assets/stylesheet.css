@@ -39,7 +39,7 @@ header {
   padding: 10px;
 }
 
-header > h1 {
+header > * {
   margin: 0 auto;
   width: 800px;
   text-align: center;
